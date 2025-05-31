@@ -1,0 +1,51 @@
+# ---- General ----
+.DS_Store
+*.log
+*.tmp
+*.swp
+
+# ---- Node / Svelte Frontend ----
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/.turbo/
+frontend/.vercel/
+frontend/.env
+frontend/.env.*
+
+# ---- Go Backend ----
+backend/bin/
+backend/vendor/
+backend/coverage.out
+backend/*.test
+backend/.env
+backend/.env.*
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+
+# ---- Docker ----
+**/.docker/
+**/docker-compose.override.yml
+
+# Ignore Docker volumes or generated files
+**/data/
+**/tmp/
+
+# ---- CI/CD ----
+/coverage/
+/dist/
+/build/
+/artifacts/
+
+# ---- IDE/Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- OS Files ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
