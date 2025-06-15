@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
 import { onMount } from 'svelte';
 import { config } from '$lib/config';
 
@@ -34,4 +35,3 @@ padding: 1rem;
 <main>
 <p>{message}</p>
 </main>
-
