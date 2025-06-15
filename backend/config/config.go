@@ -3,6 +3,7 @@ package config
 import (
   "log"
   "os"
+  "strings"
   "github.com/joho/godotenv"
 )
 
@@ -18,4 +19,12 @@ func GetPort() string {
     port = "8080"
   }
   return port
+}
+
+func GetAllowedOrigins() []string {
+  origins := os.Getenv("ALLOWED_ORIGINS")
+  if origins == "" {
+    origins = "http://localhost:5173"
+  }
+  return strings.Split(origins, ",")
 }
