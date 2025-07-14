@@ -12,6 +12,7 @@ frontend/.turbo/
 frontend/.vercel/
 frontend/.env
 frontend/.env.*
+!frontend/.env.example
 
 # ---- Go Backend ----
 backend/bin/
@@ -20,6 +21,7 @@ backend/coverage.out
 backend/*.test
 backend/.env
 backend/.env.*
+!backend/.env.example
 
 # Go build artifacts
 *.exe
